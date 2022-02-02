@@ -1,0 +1,20 @@
+PODS:
+  - FloatingPanel (2.5.1)
+  - youtube-ios-player-helper (1.0.4)
+
+DEPENDENCIES:
+  - FloatingPanel
+  - youtube-ios-player-helper
+
+SPEC REPOS:
+  trunk:
+    - FloatingPanel
+    - youtube-ios-player-helper
+
+SPEC CHECKSUMS:
+  FloatingPanel: 523cb50f490f151fc03fabf24a8322e44d22f65f
+  youtube-ios-player-helper: e9b97535e816db3152179d84d999bc1807ecd689
+
+PODFILE CHECKSUM: d5579143b76ae28380de5cb796d9d80273178a83
+
+COCOAPODS: 1.11.2
