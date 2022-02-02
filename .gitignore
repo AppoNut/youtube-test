@@ -76,4 +76,17 @@ fastlane/test_output
 !*.xcworkspace/contents.xcworkspacedata
 /*.gcno
 
+.gradle
+.settings
+.project
+.classpath
+.vscode
+.idea
+build
+*.iml
+Pods
+xcuserdata
+local.properties
+*.generated.swift
+
 # End of https://www.gitignore.io/api/swift,xcode
