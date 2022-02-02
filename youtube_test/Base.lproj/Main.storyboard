@@ -1,24 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="youtube_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pOg-a5-Fxa">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="88"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2KM-hH-5gh">
+                                        <rect key="frame" x="34" y="52" width="28" height="28"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="28" id="0Zn-Pm-fyn"/>
+                                            <constraint firstAttribute="height" constant="28" id="7eL-9d-Z2Y"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="2KM-hH-5gh" secondAttribute="bottom" constant="8" id="Don-j1-A6R"/>
+                                    <constraint firstItem="2KM-hH-5gh" firstAttribute="top" secondItem="pOg-a5-Fxa" secondAttribute="top" constant="52" id="Hy7-Gb-jGt"/>
+                                    <constraint firstItem="2KM-hH-5gh" firstAttribute="leading" secondItem="pOg-a5-Fxa" secondAttribute="leading" constant="34" id="LT5-0l-QxD"/>
+                                    <constraint firstAttribute="height" constant="88" id="ofm-vA-aEF"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wp4-8V-Ocs" customClass="YTPlayerView">
+                                <rect key="frame" x="0.0" y="88" width="414" height="720"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h5G-i1-PnO">
+                                <rect key="frame" x="0.0" y="808" width="414" height="88"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="gMb-W7-3KJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="h5G-i1-PnO" secondAttribute="bottom" id="399-z0-bxs"/>
+                            <constraint firstItem="pOg-a5-Fxa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="F6M-ld-oZp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wp4-8V-Ocs" secondAttribute="trailing" id="GlH-hE-76T"/>
+                            <constraint firstItem="Wp4-8V-Ocs" firstAttribute="top" secondItem="pOg-a5-Fxa" secondAttribute="bottom" id="HNt-tf-dIS"/>
+                            <constraint firstItem="pOg-a5-Fxa" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Uwy-sw-b53"/>
+                            <constraint firstItem="Wp4-8V-Ocs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Z2q-kV-H5M"/>
+                            <constraint firstItem="h5G-i1-PnO" firstAttribute="top" secondItem="Wp4-8V-Ocs" secondAttribute="bottom" id="c1l-fJ-bL1"/>
+                            <constraint firstItem="h5G-i1-PnO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="luz-IV-dKu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h5G-i1-PnO" secondAttribute="trailing" id="qmc-f1-wB6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pOg-a5-Fxa" secondAttribute="trailing" id="wq8-ic-mLJ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bottomBarView" destination="h5G-i1-PnO" id="WdL-gv-JCK"/>
+                        <outlet property="navBarView" destination="pOg-a5-Fxa" id="v8z-Ui-szW"/>
+                        <outlet property="youtubeView" destination="Wp4-8V-Ocs" id="5pt-jD-jZ0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
